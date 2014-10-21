@@ -1,7 +1,7 @@
 # Occam core modules configuration
-nod 'profiles'
-:git => 'https://github.com/jameskyle/occam-profiles.git',
-:ref => 'master'
+mod 'profiles'
+  :git => 'https://github.com/jameskyle/occam-profiles.git',
+  :ref => 'master'
 
 # OK
 mod 'account',

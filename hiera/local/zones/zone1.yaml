@@ -17,12 +17,8 @@
 #ops & common data
 ####################################################
 # Admintools
-profile::admintools::announcements::from_email: "admin@%{hiera('external_domain')}"
+profile::admintools::announcements::from_email: "admin@zone1.example.com"
 profile::admintools::announcements::from_name: 'ZONE1 Cloud Admin'
-
-# included applications
-profile::hiera::config::occam_apps:
-  - 'att-innovate/occam-havana-cloud'
 
 # Block devices
 root_device: '/dev/sda'
@@ -157,5 +153,19 @@ profile::openstack::controller::mysqld_settings:
         query_cache_size: '32M'
         max_connections: '1024'
 
-# kernel setting overwrite
-profile::occamengine::kernel_version: 'linux-generic-lts-trusty'
+managed_groups:
+  cloud: {}
+managed_users:
+  admin:
+    ssh_key: AAAAB3NzaC1yc2EAAAADAQABAAABAQDMF3QYPOtbx/tqrNraJSD10gO1k9JVt3+0GZstRdZklKeqWsmTGAA+IJKrefKcWqbwlh96z1AztOIradbxJVvm87bUl7xwCd/8u5lweW0djzI2K+Y93VPUygI9/NRa0ggI2FJaYaWPEeIAS0viNL1kkWcEdXWiLNjysCoU44Ivv6FLdmI6DOipaHu5az40gB3xT+De8Vau0Pn2W9oLYYsrJCvfj5Hq42ZS0bcMrDekROpHGIrSI1bktcjg8Exw6jvelBXRplSBKsuU+MOQXHjqgz5XlpO+paDXGEXPcGg4sNhun6Cdl6M7Tek5FTomeNulhmfWQuc15e6aYWJ4+ojH
+    shell: zsh
+    groups:
+    - cloud
+    home: "/home/admin"
+    tag:
+    - openstack
+  test:
+    ssh_key: AAAAB3NzaC1yc2EAAAADAQABAAABAQCnvkW2clEsbmk7uEx91kNQhHrvxFOWwdPW5gSsjNtA28gH7zJvHjbHSh4uaTF3aj9t+PMm2ZAH+gIdyno4HYtrDwFQfKEx+YohhGpcBPnIp6rAFYrLDzs0q5cPeVBc9h53UXNVNIofgU2PIvl1MPK9PIaNnEBeuZ2aI/vRa+TQgCLjFHEDEFXbF7eSf2j4gUwWA/LjjXiXFeds88ZCX9t/eAN40OXt2faW8QvnbiWTWokfJVgBR6HWwkanxxCqip7R1oVn/WMYmrWU1sutvJo0+TlhWrhbg3DdqqOYAXUwf2Lnohqz8r28d5QhQf+i5UzPA0Zo+VH3aPauo+eudbFz
+    ssh_key_type: ssh-rsa
+    shell: zsh
+    home: "/home/test"
