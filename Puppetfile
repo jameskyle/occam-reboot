@@ -1,4 +1,6 @@
 # Occam core modules configuration
+mod 'example42/network'
+
 mod 'role',
   :git => 'https://github.com/jameskyle/occam-roles.git',
   :ref => 'develop'
@@ -48,9 +50,6 @@ mod 'inifile',
   :git => 'https://github.com/cprice-puppet/puppetlabs-inifile.git',
   :ref => '530b053f71c60837573899cd6a8b3c9ec13f7196'
 
-mod 'interfaces',
-  :git => 'https://github.com/x-way/puppet-interfaces.git',
-  :ref => 'f934505556d2570bd890c15612f445c31ad7a383'
 
 mod 'logstash',
   :git => 'https://github.com/elasticsearch/puppet-logstash.git',
