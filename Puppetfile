@@ -1,9 +1,9 @@
 # Occam core modules configuration
-mod 'profiles',
-  :git => 'https://github.com/jameskyle/occam-profiles.git',
+mod 'role',
+  :git => 'https://github.com/jameskyle/occam-roles.git',
   :ref => 'develop'
 
-mod 'profiles',
+mod 'profile',
   :git => 'https://github.com/jameskyle/occam-profiles.git',
   :ref => 'develop'
 
