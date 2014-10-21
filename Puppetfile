@@ -1,5 +1,5 @@
 # Occam core modules configuration
-mod 'profiles'
+mod 'profiles',
   :git => 'https://github.com/jameskyle/occam-profiles.git',
   :ref => 'master'
 
