@@ -1,6 +1,10 @@
 # Occam core modules configuration
 mod 'example42/network'
 mod 'stephenrjohnson/puppet'
+mod 'puppetlabs/inifile'
+mod 'puppetlabs/apache'
+mod 'puppetlabs/puppetdb'
+mod 'puppetlabs/stdlib'
 
 mod 'role',
   :git => 'https://github.com/jameskyle/occam-roles.git',
