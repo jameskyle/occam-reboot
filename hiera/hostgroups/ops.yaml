@@ -5,3 +5,5 @@ profile::dns::setup::hostnames:
 sudo_confs:
   ops:
     content: "ops ALL=(ALL) NOPASSWD: ALL"
+  admin:
+    content: "%admin ALL=(ALL) NOPASSWD: ALL"
