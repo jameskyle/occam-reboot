@@ -1,5 +1,6 @@
 # Occam core modules configuration
 mod 'example42/network'
+mod 'stephenrjohnson/puppet',
 
 mod 'role',
   :git => 'https://github.com/jameskyle/occam-roles.git',
@@ -13,10 +14,6 @@ mod 'profile',
 mod 'account',
   :git => 'https://github.com/torrancew/puppet-account.git',
   :ref => 'd71e20b521f4cfe3015a188ef66942fed0ea6bc9'
-
-mod 'apache',
-  :git => 'https://github.com/puppetlabs/puppetlabs-apache.git',
-  :ref => '4cf7709c48222018e1f547bf47a44bafe6b1a15c'
 
 mod 'apt',
   :git => 'https://github.com/puppetlabs/puppetlabs-apt',
@@ -46,11 +43,6 @@ mod 'git',
   :git => 'https://github.com/puppetlabs/puppetlabs-git',
   :ref => '3ab03f32facab72cebc7c5acd00d3b5715e46985'
 
-mod 'inifile',
-  :git => 'https://github.com/cprice-puppet/puppetlabs-inifile.git',
-  :ref => '530b053f71c60837573899cd6a8b3c9ec13f7196'
-
-
 mod 'logstash',
   :git => 'https://github.com/elasticsearch/puppet-logstash.git',
   :ref => '0.5.1'
@@ -71,13 +63,6 @@ mod 'postgresql',
   :git => 'https://github.com/puppetlabs/puppet-postgresql.git',
   :ref => 'e25efcfc2196c583f7ba6e4ca8347056eafdf79b'
 
-mod 'puppet',
-  :git => 'https://github.com/stephenrjohnson/puppetlabs-puppet.git',
-  :ref => '4c2bfeb6239bd39fd1d1dad6ac71ff8cc19dbf4b'
-
-mod 'puppetdb',
-  :git => 'https://github.com/puppetlabs/puppetlabs-puppetdb',
-  :ref => '1c94d83dce208e958ff9b2f285716318646537c5'
 
 mod 'puppetdbquery',
   :git => 'https://github.com/dalen/puppet-puppetdbquery.git',
@@ -98,10 +83,6 @@ mod 'ruby',
 mod 'staging',
   :git => 'https://github.com/nanliu/puppet-staging.git',
   :ref => '1a4ce6fc6a815960f799cda37f93f5aff8eda925'
-
-mod 'stdlib',
-  :git => 'https://github.com/puppetlabs/puppetlabs-stdlib',
-  :ref => '1ffd72daaaf21e71e762b6cd543043680bdb6694'
 
 mod 'sudo',
   :git => 'https://github.com/saz/puppet-sudo.git',
