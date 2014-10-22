@@ -5,6 +5,7 @@ mod 'puppetlabs/inifile'
 mod 'puppetlabs/apache'
 mod 'puppetlabs/puppetdb'
 mod 'puppetlabs/stdlib'
+mod 'puppetlabs/postgresql'
 
 mod 'role',
   :git => 'https://github.com/jameskyle/occam-roles.git',
@@ -62,11 +63,6 @@ mod 'mongodb',
 mod 'ntp',
   :git => 'https://github.com/puppetlabs/puppetlabs-ntp.git',
   :ref => '74fc27a2028eed54545f04d2c20187665dc45be6'
-
-mod 'postgresql',
-  :git => 'https://github.com/puppetlabs/puppet-postgresql.git',
-  :ref => 'e25efcfc2196c583f7ba6e4ca8347056eafdf79b'
-
 
 mod 'puppetdbquery',
   :git => 'https://github.com/dalen/puppet-puppetdbquery.git',
