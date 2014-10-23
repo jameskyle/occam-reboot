@@ -7,6 +7,10 @@ mod 'puppetlabs/puppetdb'
 mod 'puppetlabs/stdlib'
 mod 'puppetlabs/postgresql'
 
+mod 'puppet',
+  :git => 'https://github.com/jameskyle/puppetmodule.git',
+  :ref => '730f99a6faf3e0aab50b0e79f4b4f5ef08644864'
+
 mod 'role',
   :git => 'https://github.com/jameskyle/occam-roles.git',
   :ref => 'develop'
