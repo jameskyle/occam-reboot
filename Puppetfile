@@ -1,6 +1,6 @@
 # Occam core modules configuration
 mod 'example42/network'
-mod 'stephenrjohnson/puppet'
+#mod 'stephenrjohnson/puppet'
 mod 'puppetlabs/inifile'
 mod 'puppetlabs/apache'
 mod 'puppetlabs/puppetdb'
