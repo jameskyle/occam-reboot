@@ -19,7 +19,8 @@
 # Admintools
 profile::admintools::announcements::from_email: "admin@zone1.example.com"
 profile::admintools::announcements::from_name: 'ZONE1 Cloud Admin'
-
+profile::puppet::agent::environment: testing
+  
 # Block devices
 root_device: '/dev/sda'
 # used on compute nodes:
