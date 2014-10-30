@@ -70,9 +70,9 @@ profile::openstack::controller::allowed_hosts:
   - '127.0.0.%'
   - '192.168.100.%'
 # Interface on controller used for public network
-mgmt_interface: 'eth0'
+mgmt_interface: 'eth1'
 # Inferface on controller used for bridging
-pub_interface: 'eth1'
+pub_interface: 'eth0'
 # Interface on controller used for private network
 priv_interface: 'eth5'
 # Name of certificate file located in
