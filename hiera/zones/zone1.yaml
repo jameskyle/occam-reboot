@@ -63,7 +63,7 @@ pub_ctrl_ip: '192.168.4.11'
 # Hosts allowed to communicate with controller
 profile::openstack::proxy::keystone_url: auth.%{hiera('pub_domain')}
 profile::openstack::proxy::nova_url: "compute.%{hiera('pub_domain')}"
-profile::openstack::proxy::nova_url: "vol.%{hiera('pub_domain')}"
+profile::openstack::proxy::cinder_url: "vol.%{hiera('pub_domain')}"
 profile::openstack::controller::allowed_hosts:
   - '127.0.0.%'
   - '192.168.100.%'
