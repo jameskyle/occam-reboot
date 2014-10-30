@@ -36,7 +36,7 @@ puppet_environment: 'testing'
 # IP address of ops node
 puppet_address: '192.168.100.10'
 # Time zone used by entire cloud
-timezone: 'America/Los_Angeles'
+profile::base::timezone: 'America/Los_Angeles'
 # Domain name used internally
 mgmt_domain: 'zone1.example.com'
 # Domain name used for endpoint names
