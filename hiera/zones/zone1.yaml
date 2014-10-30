@@ -65,7 +65,7 @@ profile::openstack::proxy::keystone_url: auth.%{hiera('pub_domain')}
 profile::openstack::proxy::nova_url: "compute.%{hiera('pub_domain')}"
 profile::openstack::proxy::cinder_url: "vol.%{hiera('pub_domain')}"
 profile::openstack::proxy::glance_url: "image.%{hiera('pub_domain')}"
-profile::openstack::proxy::glance_url: "net.%{hiera('pub_domain')}"
+profile::openstack::proxy::neutron_url: "net.%{hiera('pub_domain')}"
 profile::openstack::controller::allowed_hosts:
   - '127.0.0.%'
   - '192.168.100.%'
