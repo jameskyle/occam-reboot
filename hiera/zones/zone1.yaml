@@ -20,7 +20,7 @@
 profile::admintools::announcements::from_email: "admin@zone1.example.com"
 profile::admintools::announcements::from_name: 'ZONE1 Cloud Admin'
 profile::puppet::agent::environment: testing
-  
+
 # Block devices
 root_device: '/dev/sda'
 # used on compute nodes:
@@ -34,7 +34,7 @@ ceilometer_db_block_device: '/dev/sda6'
 # Puppet environement used by clients
 puppet_environment: 'testing'
 # IP address of ops node
-puppet_address: '192.168.3.10'
+puppet_address: '192.168.100.10'
 # Time zone used by entire cloud
 timezone: 'America/Los_Angeles'
 # Domain name used internally
@@ -46,24 +46,25 @@ monitoring: true
 # Hostname of monitoring node
 monitoring_node: 'monit1'
 # IP address of monitoring node
-monitoring_node_ip: '192.168.3.15'
+monitoring_node_ip: '192.168.100.15'
 # Range and lease time for mgmt network
 # Should look like: 'first_ip,last_ip,lease_time'
-mgmt_net_dhcp_range: '192.168.3.100,192.168.3.200,12h'
+mgmt_net_dhcp_range: '192.168.100.100,192.168.100.200,12h'
 profile::dns::server::vm_dhcp_range: '172.16.1.100,172.16.1.200,12h'
 
 # MGMT network gateway
-mgmt_gateway: '192.168.3.1'
+mgmt_gateway: '192.168.100.1'
 # MGMT network in cidr notation
-mgmt_network: '192.168.3.0/24'
+mgmt_network: '192.168.100.0/24'
 # MGMT IP address of controller
-mgmt_ctrl_ip: '192.168.3.11'
+mgmt_ctrl_ip: '192.168.100.11'
 # Public IP address of controller
 pub_ctrl_ip: '192.168.4.11'
 # Hosts allowed to communicate with controller
+profile::openstack::proxy::keystone_url: auth.%{hiera('pub_domain')}
 profile::openstack::controller::allowed_hosts:
   - '127.0.0.%'
-  - '192.168.3.%'
+  - '192.168.100.%'
 # Interface on controller used for public network
 mgmt_interface: 'eth0'
 # Inferface on controller used for bridging
@@ -88,7 +89,7 @@ cloud_public_net_name: 'public'
 # External dns address
 external_dns: '8.8.8.8'
 # Ops ip + 1 on last octet for HA setup or Ops ip for non-HA setup
-starting_ip_mgmt: 192.168.3.11
+starting_ip_mgmt: 192.168.100.11
 # VM network base IP (WITHOUT last octet WITH last dot)
 vm_base: 172.16.1.
 # High availability setup (true/false)
@@ -130,9 +131,9 @@ roles:
 
 networks:
   eth0:
-    network: 192.168.3.0
+    network: 192.168.100.0
     netmask: 255.255.255.0
-    gateway: 192.168.3.1
+    gateway: 192.168.100.1
   eth5:
     suffix: 'vm'
     network: 172.16.1.0
