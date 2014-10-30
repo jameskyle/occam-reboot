@@ -71,6 +71,10 @@ profile::openstack::controller::allowed_hosts:
   - '192.168.100.%'
 # Interface on controller used for public network
 mgmt_interface: 'eth1'
+profile::openstack::swift::proxy::mgmt_interface: "%{hiera('mgmt_interface')}"                           │Compressing objects: 100% (4/4), done.
+profile::openstack::compute::mgmt_interface: "%{hiera('mgmt_interface')}"                                │Writing objects: 100% (5/5), 433 bytes | 0 bytes/s, done.
+profile::openstack::controller::mgmt_interface: "%{hiera('mgmt_interface')}"                             │Total 5 (delta 2), reused 0 (delta 0)
+profile::openstack::controller::public_interface: "%{hier
 # Inferface on controller used for bridging
 pub_interface: 'eth0'
 # Interface on controller used for private network
