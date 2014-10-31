@@ -6,6 +6,7 @@ mod 'puppetlabs/apache'
 mod 'puppetlabs/puppetdb'
 mod 'puppetlabs/stdlib'
 mod 'puppetlabs/postgresql'
+mod 'duritong/sysctl'
 
 mod 'puppet',
   :git => 'https://github.com/jameskyle/puppetmodule.git',
@@ -213,12 +214,6 @@ mod 'swift',
 	:git => 'https://github.com/stackforge/puppet-swift.git',
 	#:ref => '98fe9219e35c65cf3db75bf79b9d12cead61f475'
   :ref => 'stable/havana'
-
-# Should be updated
-# OK
-mod 'sysctl',
-	:git => 'https://github.com/duritong/puppet-sysctl.git',
-	:ref => 'f168534dc0fb2985aaf7b967a256ee113624bdd6'
 
 mod 'tempest',
   :git => 'https://github.com/kswia/puppet-tempest.git',
