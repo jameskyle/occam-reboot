@@ -20,6 +20,7 @@
 profile::admintools::announcements::from_email: "admin@zone1.example.com"
 profile::admintools::announcements::from_name: 'ZONE1 Cloud Admin'
 profile::puppet::agent::environment: testing
+profile::puppet::puppet_server: ops1.zone1.example.com
 
 # Block devices
 root_device: '/dev/sda'
