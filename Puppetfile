@@ -7,6 +7,7 @@ mod 'puppetlabs/puppetdb'
 mod 'puppetlabs/stdlib'
 mod 'puppetlabs/postgresql'
 mod 'duritong/sysctl'
+mod 'puppetlabs/concat'
 
 mod 'puppet',
   :git => 'https://github.com/jameskyle/puppetmodule.git',
@@ -28,10 +29,6 @@ mod 'account',
 mod 'apt',
   :git => 'https://github.com/puppetlabs/puppetlabs-apt',
   :ref => '924e89289b93db60ef0f16a4e71579fa88e037a6'
-
-mod 'concat',
-  :git => 'https://github.com/puppetlabs/puppetlabs-concat.git',
-  :ref => '721ce8873837dc1d5a48f0a8af44216e4bafe7f2'
 
 mod 'datacat',
   :git => 'https://github.com/mmz-srf/puppet-datacat.git',
