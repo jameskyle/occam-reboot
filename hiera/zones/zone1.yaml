@@ -506,7 +506,7 @@ profile::openstack::firewall::public_net_allocation_end: "%{hiera('cloud_public_
 ########################################
 # DNS Interface
 ########################################
-profile::dns::setup::address: "%{$::ipaddress_eth1}"
+profile::dns::setup::address: "%{::ipaddress_eth1}"
 
 ##########################################################
 # PuppetDB backend
