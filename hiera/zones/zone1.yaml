@@ -503,10 +503,8 @@ profile::openstack::firewall::public_net_cidr: "%{hiera('cloud_public_net_cidr')
 profile::openstack::firewall::public_net_allocation_start: "%{hiera('cloud_public_net_allocation_start')}"
 profile::openstack::firewall::public_net_allocation_end: "%{hiera('cloud_public_net_allocation_end')}"
 
-########################################
-# DNS Interface
-########################################
 profile::dns::setup::address: "%{::ipaddress_eth1}"
+profile::base::puppetrepo: false
 
 ##########################################################
 # PuppetDB backend
