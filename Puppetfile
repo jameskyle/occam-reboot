@@ -8,7 +8,7 @@ mod 'puppetlabs/stdlib'
 mod 'puppetlabs/postgresql'
 mod 'duritong/sysctl'
 mod 'puppetlabs/concat'
-mod 'puppetlabs/mysql'
+mod 'puppetlabs/mysql', '>=0.6.1 <1.0.0'
 
 #mod 'puppet',
 #  :git => 'https://github.com/jameskyle/puppetmodule.git',
