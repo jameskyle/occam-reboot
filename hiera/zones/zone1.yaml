@@ -195,18 +195,6 @@ networks:
 
 #occamengine settings - end
 
-# mysql settings overwrite
-profile::openstack::controller::mysqld_settings:
-        innodb_buffer_pool_size: '64M'
-        innodb_buffer_pool_instances: '8'
-        innodb_flush_method: 'O_DIRECT'
-        key_buffer: '32M'
-        max_allowed_packet: '2048M'
-        thread_stack: '512K'
-        thread_cache_size: '1024'
-        query_cache_limit: '8M'
-        query_cache_size: '32M'
-        max_connections: '1024'
 
 managed_groups:
   cloud: {}
@@ -438,15 +426,15 @@ profile::openstack::controller::public_interface: "%{hiera('mgmt_interface')}"
 profile::openstack::controller::private_interface: "%{hiera('priv_interface')}"
 profile::openstack::controller::allow_overlapping_ips: true
 profile::openstack::controller::mysqld_settings:
-        innodb_buffer_pool_size: '40G'
+        innodb_buffer_pool_size: '64M'
         innodb_buffer_pool_instances: '8'
         innodb_flush_method: 'O_DIRECT'
-        key_buffer: '2048M'
-        max_allowed_packet: '2048M'
+        key_buffer: '32M'
+        max_allowed_packet: '512M'
         thread_stack: '512K'
         thread_cache_size: '1024'
-        query_cache_limit: '2048M'
-        query_cache_size: '128M'
+        query_cache_limit: '8M'
+        query_cache_size: '32M'
         max_connections: '1024'
 profile::openstack::controller::public_protocol: 'https'
 profile::openstack::controller::glance_blkdev: "%{hiera('glance_block_device')}"
