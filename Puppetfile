@@ -8,6 +8,7 @@ mod 'puppetlabs/stdlib'
 mod 'puppetlabs/postgresql'
 mod 'duritong/sysctl'
 mod 'puppetlabs/concat'
+mod 'puppetlabs/mysql'
 
 #mod 'puppet',
 #  :git => 'https://github.com/jameskyle/puppetmodule.git',
@@ -139,8 +140,6 @@ mod 'haproxy',
 
 mod 'horizon',
   :git => 'https://github.com/stackforge/puppet-horizon.git',
-  # This is original ref we use should be upgraded to main stable/havana
-  #:ref => 'aea8538c370b4bacc6d117f572fd6af74d05d48d'
   :ref => 'stable/havana'
 
 # OK
@@ -165,11 +164,6 @@ mod 'memcached',
 	:git => 'https://github.com/saz/puppet-memcached.git',
 	#:ref => 'v2.4.0'
   :ref => '7585134d25058c6dcde8ce164950b10bf9bea1f4'
-
-# OK
-mod 'mysql',
-  :git => 'https://github.com/puppetlabs/puppetlabs-mysql.git',
-  :ref => '0.6.1'
 
 # OK
 mod 'neutron',

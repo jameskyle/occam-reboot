@@ -118,7 +118,7 @@ profile::openstack::controller::pub_interface: "%{hiera('pub_interface')}"
 profile::openstack::controller::pub_interface: "%{hiera('pub_interface')}"
 
 # Interface on controller used for private network
-priv_interface: 'eth5'
+priv_interface: 'eth1'
 profile::openstack::swift::proxy::priv_interface: "%{hiera('priv_interface')}"
 profile::openstack::compute::priv_interface: "%{hiera('priv_interface')}"
 profile::openstack::controller::priv_interface: "%{hiera('priv_interface')}"
