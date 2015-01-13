@@ -9,7 +9,6 @@ mod 'puppetlabs/postgresql'
 mod 'duritong/sysctl'
 mod 'puppetlabs/concat'
 mod 'puppetlabs/mysql', '0.6.1'
-mod 'puppetlabs/rabbitmq', '3.1.0'
 
 #mod 'puppet',
 #  :git => 'https://github.com/jameskyle/puppetmodule.git',
@@ -75,6 +74,10 @@ mod 'puppetdbquery',
 mod 'puppi',
   :git => 'https://github.com/example42/puppi.git',
   :ref => '57a88e119cc405e3d24bb7439d3f54d98a605d21'
+
+mod 'rabbitmq',
+  :git => 'https://github.com/puppetlabs/puppetlabs-rabbitmq.git',
+  :ref => '61991d76cda34c7af5c98ceb53666a0a2b57fda7'
 
 mod 'ruby',
   :git => 'https://github.com/puppetlabs/puppetlabs-ruby',
