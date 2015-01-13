@@ -13,6 +13,13 @@
 #
 #######
 
+################################
+#     Base Profile Configuration
+################################
+profile::base::puppetrepo: false
+profile::base::puppet::agent::puppet_run_style: "manual"
+profile::base::timezone: 'America/Los_Angeles'
+
 ####################################################
 #ops & common data
 ####################################################
@@ -59,8 +66,6 @@ profile::openstack::controller::nova_user_password: 'nova_user_password'
 puppet_environment: 'testing'
 # IP address of ops node
 puppet_address: '192.168.100.10'
-# Time zone used by entire cloud
-profile::base::timezone: 'America/Los_Angeles'
 # Domain name used internally
 mgmt_domain: 'zone1.example.com'
 # Domain name used for endpoint names
@@ -492,7 +497,6 @@ profile::openstack::firewall::public_net_allocation_start: "%{hiera('cloud_publi
 profile::openstack::firewall::public_net_allocation_end: "%{hiera('cloud_public_net_allocation_end')}"
 
 profile::dns::setup::address: "%{::ipaddress_eth1}"
-profile::base::puppetrepo: false
 
 ##########################################################
 # PuppetDB backend
