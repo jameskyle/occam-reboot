@@ -10,10 +10,6 @@ mod 'duritong/sysctl'
 mod 'puppetlabs/concat'
 mod 'puppetlabs/mysql', '0.6.1'
 
-#mod 'puppet',
-#  :git => 'https://github.com/jameskyle/puppetmodule.git',
-#  :ref => '730f99a6faf3e0aab50b0e79f4b4f5ef08644864'
-
 mod 'role',
   :git => 'https://github.com/jameskyle/occam-roles.git',
   :ref => 'develop'
@@ -178,7 +174,7 @@ mod 'nova',
 # OK
 mod 'openstack',
 	:git => 'https://github.com/stackforge/puppet-openstack.git',
-	:ref => 'stable/havana'
+	:ref => 'd81d2d86280d5739cc896a48b68d7309e765047a'
 
 # update module to 0.3.0
 # OK
