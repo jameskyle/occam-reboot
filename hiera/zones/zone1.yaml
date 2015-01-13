@@ -17,7 +17,7 @@
 #     Base Profile Configuration
 ################################
 profile::base::puppetrepo: false
-profile::base::puppet::agent::puppet_run_style: "manual"
+profile::puppet::agent::puppet_run_style: "manual"
 profile::base::timezone: 'America/Los_Angeles'
 
 ####################################################
