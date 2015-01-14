@@ -103,8 +103,6 @@ mod 'zabbix',
   :git => 'https://github.com/kswia/puppet-zabbix.git',
   :ref => 'feature/simplified'
 
-# Cloud app modules configuration
-
 # OK
 mod 'ceilometer',
   :git => 'https://github.com/stackforge/puppet-ceilometer.git',
@@ -115,6 +113,47 @@ mod 'cinder',
 	:git => 'https://github.com/stackforge/puppet-cinder.git',
 	:ref => 'stable/havana'
 
+# OK
+mod 'glance',
+  :git => 'https://github.com/stackforge/puppet-glance.git',
+  :ref => 'stable/havana'
+
+mod 'horizon',
+  :git => 'https://github.com/stackforge/puppet-horizon.git',
+  :ref => 'stable/havana'
+
+mod 'keystone',
+	:git => 'https://github.com/stackforge/puppet-keystone.git',
+	:ref => 'stable/havana'
+
+mod 'neutron',
+	:git => 'https://github.com/stackforge/puppet-neutron.git',
+	:ref => 'stable/havana'
+
+mod 'nova',
+	:git => 'https://github.com/stackforge/puppet-nova.git',
+	:ref => 'stable/havana'
+
+mod 'openstack',
+	:git => 'https://github.com/kswia/puppet-openstack.git',
+	:ref => 'd81d2d86280d5739cc896a48b68d7309e765047a'
+
+# Original is 2 commits behind stable/havana. Be careful
+mod 'swift',
+	:git => 'https://github.com/stackforge/puppet-swift.git',
+    :ref => 'stable/havana'
+
+# OK
+mod 'haproxy',
+	:git => 'https://github.com/puppetlabs/puppetlabs-haproxy',
+	:ref => '0.4.1'
+
+# OK
+mod 'java',
+	:git => 'https://github.com/Proteon/puppet-java.git',
+	:ref => '23cddad51c17fb035c54b592f204a45064bde073'
+
+
 mod 'corosync',
   :git => 'https://github.com/puppetlabs/puppetlabs-corosync.git',
   :ref => 'd72c53980ca2e0c1efa33eda75e42ec080d440c2'
@@ -123,31 +162,6 @@ mod 'corosync',
 mod 'erlang',
 	:git => 'https://github.com/garethr/garethr-erlang.git',
 	:ref => '91d8ec73c321f818da1fcfda8364a39aed444ac5'
-
-# OK
-mod 'glance',
-  :git => 'https://github.com/stackforge/puppet-glance.git',
-  :ref => 'stable/havana'
-
-# OK
-mod 'haproxy',
-	:git => 'https://github.com/puppetlabs/puppetlabs-haproxy',
-	:ref => '0.4.1'
-
-mod 'horizon',
-  :git => 'https://github.com/stackforge/puppet-horizon.git',
-  :ref => 'stable/havana'
-
-# OK
-mod 'java',
-	:git => 'https://github.com/Proteon/puppet-java.git',
-	:ref => '23cddad51c17fb035c54b592f204a45064bde073'
-
-# should be 3.2.0 not 2.2.0
-# OK
-mod 'keystone',
-	:git => 'https://github.com/stackforge/puppet-keystone.git',
-	:ref => 'stable/havana'
 
 # Is it really needed?
 # OK
@@ -161,20 +175,7 @@ mod 'memcached',
 	#:ref => 'v2.4.0'
   :ref => '7585134d25058c6dcde8ce164950b10bf9bea1f4'
 
-# OK
-mod 'neutron',
-	:git => 'https://github.com/stackforge/puppet-neutron.git',
-	:ref => 'stable/havana'
 
-# OK
-mod 'nova',
-	:git => 'https://github.com/stackforge/puppet-nova.git',
-	:ref => 'stable/havana'
-
-# OK
-mod 'openstack',
-	:git => 'https://github.com/stackforge/puppet-openstack.git',
-	:ref => 'd81d2d86280d5739cc896a48b68d7309e765047a'
 
 # update module to 0.3.0
 # OK
@@ -195,12 +196,6 @@ mod 'ssh',
 	#:ref => '10675c0d80511a8cdd514af67b695887fa97ec40'
   :ref => 'v2.3.6'
 
-# Original is 2 commits behind stable/havana. Be careful
-# OK
-mod 'swift',
-	:git => 'https://github.com/stackforge/puppet-swift.git',
-	#:ref => '98fe9219e35c65cf3db75bf79b9d12cead61f475'
-  :ref => 'stable/havana'
 
 mod 'tempest',
   :git => 'https://github.com/kswia/puppet-tempest.git',
