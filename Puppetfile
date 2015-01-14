@@ -136,7 +136,7 @@ mod 'nova',
 
 mod 'openstack',
 	:git => 'https://github.com/kswia/puppet-openstack.git',
-	:ref => 'd81d2d86280d5739cc896a48b68d7309e765047a'
+	:ref => 'stable/havana'
 
 # Original is 2 commits behind stable/havana. Be careful
 mod 'swift',
