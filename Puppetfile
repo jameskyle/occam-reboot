@@ -39,7 +39,7 @@ mod  'stackforge/nova',              '5.0.0'
 mod  'stackforge/swift',             '5.0.0'
 mod  'stackforge/vswitch',            '1.0.0'
 mod  'stephenrjohnson/puppet',       '1.3.1'
-mod  'torancew/account',             '0.0.5'
+mod  'torrancew/account',            '0.0.5'
 
 mod 'role',
   :git => 'https://github.com/jameskyle/occam-roles.git',
