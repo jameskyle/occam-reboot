@@ -1,6 +1,6 @@
 # Occam core modules configuration
 mod  'dalen/puppetdbquery',          '1.5.3'
-mod  'duritong/sysctl'               '0.0.6'
+mod  'duritong/sysctl',              '0.0.6'
 mod  'elasticsearch/elasticsearch',  '0.4.0'
 mod  'elasticsearch/logstash',       '0.5.1'
 mod  'example42/network',            '3.1.20'
